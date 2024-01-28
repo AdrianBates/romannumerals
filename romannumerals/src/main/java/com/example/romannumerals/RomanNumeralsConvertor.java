@@ -6,8 +6,14 @@ public class RomanNumeralsConvertor {
 		
 		int tot = 0;
 		
-		if (romanNumerals.startsWith("x")) {
-			return 10;
+		if (romanNumerals.startsWith("l")) {
+			return 50 + convert(romanNumerals.substring(1));
+		} 
+		else if (romanNumerals.startsWith("xl")) {
+			return 40 + convert(romanNumerals.substring(2));
+		} 
+		else if (romanNumerals.startsWith("x")) {
+			return 10 + convert(romanNumerals.substring(1));
 		} 
 		else if (romanNumerals.startsWith("ix")) {
 			return 9;

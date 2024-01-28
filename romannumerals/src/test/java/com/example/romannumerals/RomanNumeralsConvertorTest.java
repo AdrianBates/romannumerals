@@ -59,4 +59,59 @@ public class RomanNumeralsConvertorTest {
 	public void testConvert_x_10() {
 		assertEquals(10, convertor.convert("x"));
 	}
+	
+	@Test
+	public void testConvert_xi_11() {
+		assertEquals(11, convertor.convert("xi"));
+	}
+	
+	@Test
+	public void testConvert_xi_12() {
+		assertEquals(12, convertor.convert("xii"));
+	}
+	
+	@Test
+	public void testConvert_xiv_14() {
+		assertEquals(14, convertor.convert("xiv"));
+	}
+	
+	@Test
+	public void testConvert_xvi_16() {
+		assertEquals(16, convertor.convert("xvi"));
+	}
+	
+	@Test
+	public void testConvert_xix_19() {
+		assertEquals(19, convertor.convert("xix"));
+	}
+	
+	@Test
+	public void testConvert_xx_20() {
+		assertEquals(20, convertor.convert("xx"));
+	}
+	
+	@Test
+	public void testConvert_xxxix_39() {
+		assertEquals(39, convertor.convert("xxxix"));
+	}
+	
+	@Test
+	public void testConvert_xl_40() {
+		assertEquals(40, convertor.convert("xl"));
+	}
+	
+	@Test
+	public void testConvert_xli_41() {
+		assertEquals(41, convertor.convert("xli"));
+	}
+	
+	@Test
+	public void testConvert_l_50() {
+		assertEquals(50, convertor.convert("l"));
+	}
+	
+	@Test
+	public void testConvert_lxxxviii_88() {
+		assertEquals(88, convertor.convert("lxxxviii"));
+	}
 }
